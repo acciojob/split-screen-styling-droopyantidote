@@ -1,1 +1,47 @@
-/*  your css code here. If applicable */
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create the container and set display to flex */
+.container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style the navigation sidebar */
+.sidebar {
+    flex: 1; /* Takes up 1/6th of the width */
+    background-color: #D7E8D4;
+    padding: 1em;
+}
+
+/* Style the main content */
+.content {
+    flex: 5; /* Takes up 5/6th of the width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the header and footer */
+.header, .footer {
+    flex: 1; /* Takes up 1/5th of the height */
+    background-color: yellowgreen;
+    padding: 1em;
+}
+
+/* Style the article section */
+.article {
+    flex: 3; /* Takes up 3/4th of the width */
+    background-color: white; /* Adjust background color as needed */
+    padding: 1em;
+    min-height: 60vh; /* Minimum height of 60% of viewport height */
+}
+
+/* Style the aside section */
+.aside {
+    flex: 1; /* Takes up 1/4th of the width */
+    background-color: white; /* Adjust background color as needed */
+    padding: 1em;
+}
